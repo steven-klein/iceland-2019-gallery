@@ -1,0 +1,26 @@
+/*
+Font: 		Adria Grotesk
+Style: 		Black
+URL: 		http://www.youworkforthem.com/font/T4935/adria-grotesk
+Foundry: 	FaceType
+Foundry: 	http://www.youworkforthem.com/designer/97/facetype
+Copyright:	Copyright  2013 by Marcus Sterz. All rights reserved.
+Version: 	1.4
+Created:	March 10, 2014
+License: 	http://www.youworkforthem.com/font-license
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted
+			from using the WebFonts(s) listed without a purchased license.
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'AdriaGrotesk-Black';
+	src: url('../fonts/adria/adria-grotesk-black.eot');
+	src: url('../fonts/adria/adria-grotesk-black.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/adria/adria-grotesk-black.woff') format('woff'),
+	     url('../fonts/adria/adria-grotesk-black.ttf') format('truetype'),
+	     url('../fonts/adria/adria-grotesk-black.svg#ywftsvg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
