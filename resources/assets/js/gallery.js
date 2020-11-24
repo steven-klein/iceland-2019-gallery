@@ -26,6 +26,7 @@ let ImageThumb = (function () {
       m("a", {
         title: `${ctrl.attrs.image.full.src}`,
         "data-fancybox": "gallery",
+        "data-animation-effect": "fade",
         href: `.${ctrl.attrs.path}${ctrl.attrs.image.full.src}`,
         style: {
           'padding-bottom': `${(ctrl.attrs.image.thumb.dimensions.height / ctrl.attrs.image.thumb.dimensions.width) * 100}%`
