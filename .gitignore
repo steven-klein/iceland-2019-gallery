@@ -1,0 +1,9 @@
+# build files
+httpdocs
+
+# local environment
+.env
+
+# node/npm
+node_modules
+npm-debug.log

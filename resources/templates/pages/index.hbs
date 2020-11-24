@@ -1,0 +1,29 @@
+{{#> page}}
+    {{#*inline "main"}}
+        <header id="hero">
+          <div class="site-title site-container">
+            <h1 class="header">{{name}}</h1>
+            {{#if description}}
+            <h2 class="subheader">{{description}}</h2>
+            {{/if}}
+          </div>
+        </header>
+        <script>var gallery_data = {
+          IMAGE_PATH: "/assets/img/gallery/",
+          GALLERY_IMAGES: {{{ images }}}
+        };</script>
+          <section id="page" class="site">
+              <div id="content">
+                <div class="gallery"></div>
+                {{#if download_url}}
+                <div class="download">
+                  <a class="button" href="{{download_url}}" target="blank">Download All</a>
+                </div>
+                {{/if}}
+              </div>
+          </section>
+          <footer>
+              <div class="site-container">&copy; Steve Klein</div>
+          </footer>
+    {{/inline}}
+{{/page}}
