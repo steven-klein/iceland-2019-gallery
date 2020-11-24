@@ -37,6 +37,7 @@
         "gulp-plumber": "^1.0.1",
         "gulp-rename": "^1.2.2",
         "gulp-util": "^3.0.7",
+        "image-size": "^0.9.3",
         "npm-run-all": "^4.0.0",
         "postcss": "^5.2.8",
         "postcss-browser-reporter": "^0.5.0",

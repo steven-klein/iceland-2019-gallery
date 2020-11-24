@@ -1,4 +1,5 @@
 import m from 'mithril'
+import Image from './image'
 
 /**
  * Gallery
@@ -23,12 +24,15 @@ let ImageThumb = (function () {
   function view(ctrl) {
     return (validImage(ctrl.attrs.image)) ? m("li.gallery-thumb", [
       m("a", {
-        title: `${ctrl.attrs.image.full}`,
+        title: `${ctrl.attrs.image.full.src}`,
         "data-fancybox": "gallery",
-        href: `.${ctrl.attrs.path}${ctrl.attrs.image.full}`
+        href: `.${ctrl.attrs.path}${ctrl.attrs.image.full.src}`,
+        style: {
+          'padding-bottom': `${(ctrl.attrs.image.thumb.dimensions.height / ctrl.attrs.image.thumb.dimensions.width) * 100}%`
+        }
       }, [
-        m("img", {
-          src: `.${ctrl.attrs.path}${ctrl.attrs.image.thumb}`
+        m(Image, {
+          dataSrc: `.${ctrl.attrs.path}${ctrl.attrs.image.thumb.src}`
         })
       ])
     ]) : null;
@@ -51,7 +55,7 @@ let GalleryModule = (function () {
   function getIndex(file) {
     if( ! file.hasOwnProperty('full') )
       return null
-    return file.full.slice(0, -4).split('-')[2]
+    return file.full.src.slice(0, -4).split('-')[2]
   }
 
   function view(ctrl) {
